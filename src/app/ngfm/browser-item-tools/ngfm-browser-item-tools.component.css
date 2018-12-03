@@ -1,0 +1,28 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+:host>div {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.ngfm-menu-icon {
+    font-size: 1.4em;
+}
+
+.ngfm-menuitem-icon {
+    margin-right: 0.25em;
+}
+
+.ngfm-browser-item-tools-text {
+    margin: 0.2em 5px 0 0.5em;
+}
+
+.mat-button {
+    min-width: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

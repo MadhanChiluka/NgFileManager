@@ -1,0 +1,112 @@
+:host {
+    display: block;
+    font-size: 16px;
+}
+
+.mat-grid-tile {
+    cursor: pointer;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+.mat-grid-tile * {
+    outline: none;
+    user-select: none;
+}
+
+.mat-grid-tile-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.mat-grid-tile-footer>*:last-child {
+    margin-left: auto;
+}
+
+.mat-grid-tile:hover {
+    opacity: 0.8;
+}
+
+.folder-icon {
+    position: relative;
+}
+
+.folder-icon .back-icon {
+    color: #fff;
+    top: 8px;
+    left: 11px;
+    position: absolute;
+}
+
+.ngfm-folder-tile {
+    background: #bdcae2;
+}
+
+.ngfm-browser-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.ngfm-file-extension {
+    font-weight: 300;
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    background: #6c747a;
+    position: relative;
+    border-radius: 2px;
+    text-align: left;
+    border: 4px solid #fff;
+    border-radius: 2px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    -webkit-font-smoothing: antialiased;
+}
+
+.mat-grid-tile:hover .ngfm-file-extension {
+    opacity: 0.16;
+}
+
+.ngfm-file-extension::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom-left-radius: 2px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff #fff rgba(255, 255, 255, .35) rgba(255, 255, 255, .35);
+}
+
+.ngfm-file-extension>p {
+    margin: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 15px;
+    color: rgb(238, 238, 238);
+    text-transform: lowercase;
+    width: 100%;
+    padding: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+::ng-deep .mat-grid-list .mat-checkbox-frame {
+    border-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0;
+    border-width: 1px;
+}
+
+.hide-tools .mat-grid-tile-header,
+.hide-tools .mat-grid-tile-footer {
+    display: none;
+}
